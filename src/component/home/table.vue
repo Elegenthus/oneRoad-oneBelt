@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="pic">
-                    <img src="http://www.fotor.com/images2/features/photo_effects/e_bw.jpg" alt="毕业照"><img src="http://www.fotor.com/images2/features/photo_effects/e_bw.jpg"><img class="pho" src="http://www.fotor.com/images2/features/photo_effects/e_bw.jpg" alt="毕业照">
+                    <img src="http://photocdn.sohu.com/20160820/Img465174152.jpeg" alt="毕业照"><img src="http://img1.gtimg.com/news/pics/hv1/245/116/2138/139053275.png"><img class="pho" src="http://img.wezhan.cn/content/sitefiles/61024/images/6921375_NAO机器人.jpeg" alt="毕业照">
                 </div>
             </div>
             <div class="message">
@@ -119,6 +119,7 @@ export default {
 
 .pic img {
     width: 30%;
+    height: 90px;
     margin-right: 3%;
 }
 

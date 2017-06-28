@@ -3,10 +3,10 @@
         <!-- <video controls="" autoplay="" name="media">
             <source src="https://translate.google.cn/translate_tts?ie=UTF-8&q=%E8%AE%BE%E5%A4%87&tl=zh-CN&total=1&idx=0&textlen=2&tk=93501.472274&client=t" type="audio/mpeg">
         </video> -->
-        <el-table :data="tableData4" border class="tableWidth" @cell-click="clickEvent">
+        <el-table :data="tableData4" border class="tableWidth el1" @cell-click="clickEvent" >
             <el-table-column fixed prop="Chinese" label="汉语" width="150" @cell-click="clickEvent">
             </el-table-column>
-            <el-table-column prop="English" label="英语" width="200">
+            <el-table-column prop="English" label="英语" width="200" class="el-table-column">
             </el-table-column>
             <el-table-column prop="Russian" label="俄语" width="230">
             </el-table-column>
@@ -24,7 +24,7 @@
         </el-table>
         <el-pagination @current-change="handleCurrentChange" :current-page="currentPage4" layout="total,  prev, pager, next, jumper" :total="total" small class="pagination">
         </el-pagination>
-        <div class="erWeiBox" v-show = "show">
+        <div class="erWeiBox" v-show="show">
             <el-input v-model="video" class="itemWidth" placeholder="请输入视频链接"></el-input>
             <el-input v-model="Chinese" class="itemWidth" placeholder="请输入汉语词"></el-input>
             <el-input v-model="Chinese_audio" class="itemWidth" placeholder="请输入汉语音频"></el-input>
@@ -32,6 +32,8 @@
             <el-input v-model="English_audio" class="itemWidth" placeholder="请输入英语音频"></el-input>
             <el-input v-model="Russian" class="itemWidth" placeholder="请输入俄语词"></el-input>
             <el-input v-model="Russian_audio" class="itemWidth" placeholder="请输入俄语音频"></el-input>
+            <el-input v-model="Arabic" class="itemWidth" placeholder="请输入阿拉伯语词"></el-input>
+            <el-input v-model="Arabic_audio" class="itemWidth" placeholder="请输入阿拉伯语音频"></el-input>
             <el-input v-model="German" class="itemWidth" placeholder="请输入德语词"></el-input>
             <el-input v-model="German_audio" class="itemWidth" placeholder="请输入德语音频"></el-input>
             <el-button class="newButton" v-on:click="uploaderWei">添加新词</el-button>
@@ -59,6 +61,8 @@ export default {
                     German_audio: this.German_audio,
                     Russian: this.Russian,
                     Russian_audio: this.Russian_audio,
+                    Arabic: this.Arabic,
+                    Arabic_audio: this.Arabic_audio,
                     video: this.video
                 })
             }).then((res) => {
@@ -73,6 +77,8 @@ export default {
                     "German_audio": this.German_audio,
                     "Russian": this.Russian,
                     "Russian_audio": this.Russian_audio,
+                    "Arabic": this.Arabic,
+                    "Arabic_audio": this.Arabic_audio,
                     "video": this.video
                 })
                 this.Chinese = ""
@@ -83,6 +89,8 @@ export default {
                 this.German_audio = ""
                 this.Russian = ""
                 this.Russian_audio = ""
+                this.Arabic = ""
+                this.Arabic_audio = ""
                 this.video = ""
                 this.open2()
             })
@@ -136,8 +144,8 @@ export default {
     mounted() {
         this.handleCurrentChange(1)
         var sort = window.location.pathname.split('/')[1]
-        if(sort != 'learn')
-        	this.show = true
+        if (sort != 'learn')
+            this.show = true
     },
     data() {
         return {
@@ -151,6 +159,8 @@ export default {
             German_audio: "",
             Russian: "",
             Russian_audio: "",
+            Arabic: "",
+            Arabic_audio: "",
             video: "",
             show: false
         }
@@ -169,7 +179,7 @@ export default {
 }
 
 .itemWidth {
-    margin-top: 40px;
+    margin-top: 20px;
     width: 30%;
 }
 
@@ -181,5 +191,13 @@ export default {
 .erWeiBox {
     margin-left: 25%;
     padding: 4%;
+}
+
+.el1 {
+    cursor: pointer;
+}
+
+.el2 {
+    display: none;
 }
 </style>

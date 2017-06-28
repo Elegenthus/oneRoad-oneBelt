@@ -106,7 +106,7 @@
                 <a href="#" class="rlink">意见反馈</a>
             </div>
             <div class="link">
-                <img src="http://www.fotor.com/images2/features/photo_effects/e_bw.jpg" class="erwei">
+                <img src="http://www.twword.com/uploads/wiki/93/87/50698_0.jpg" class="erwei">
                 <div class="rlink load">下载 APP</div>
             </div>
         </div>
