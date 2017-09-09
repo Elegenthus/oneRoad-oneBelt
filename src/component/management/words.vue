@@ -1,8 +1,8 @@
 <template>
     <div>
-        <!-- <video controls="" autoplay="" name="media">
-            <source src="https://translate.google.cn/translate_tts?ie=UTF-8&q=%E8%AE%BE%E5%A4%87&tl=zh-CN&total=1&idx=0&textlen=2&tk=93501.472274&client=t" type="audio/mpeg">
-        </video> -->
+        <audio id = "audio">
+            <source src = "http://oh7c5eomu.bkt.clouddn.com/Bike01E.mp3"></source>
+        </audio>
         <el-table :data="tableData4" border class="tableWidth el1" @cell-click="clickEvent" >
             <el-table-column fixed prop="Chinese" label="汉语" width="150" @cell-click="clickEvent">
             </el-table-column>
@@ -53,6 +53,7 @@ export default {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
+                    sort:1,
                     Chinese: this.Chinese,
                     Chinese_audio: this.Chinese_audio,
                     English: this.English,
@@ -96,10 +97,10 @@ export default {
             })
         },
         clickEvent(row, column, cell, event) {
-            // var audio = document.getElementById("audio")
-            // var label = column.property + "_audio"
-            // audio.src = row[label]
-            // audio.play()
+            var audio = document.getElementById("audio")
+            var label = column.property + "_audio"
+            audio.src = row[label]
+            audio.play()
             console.log("row", row[column.property + "_audio"])
         },
         deleteRow(index, rows) {

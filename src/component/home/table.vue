@@ -94,16 +94,19 @@ export default {
 .title_s {
     display: inline-block;
     vertical-align: middle;
-    font-size: 20px;
+    font-size: 0px;
     border-bottom: 1px #00bb9c solid;
+    width: 78%;
 }
 
 .title {
     line-height: 40px;
     display: inline-block;
-    padding-left: 4.5%;
-    padding-right: 4.5%;
+    vertical-align: middle;
     cursor: pointer;
+    width: 33%;
+    text-align: center;
+    font-size: 18px;
 }
 
 .title:hover {

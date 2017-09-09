@@ -106,15 +106,15 @@
             "words": [{
                 "word_id": 1,
                 "Chinese": "商务座",
-                "Chinese_audio": "https://translate.google.cn/translate_tts?ie=UTF-8&q=%E6%9C%BA%E5%99%A8&tl=zh-CN&total=1&idx=0&textlen=2&tk=739869.857074&client=t&ttsspeed=0.24",
+                "Chinese_audio": "http://oh7c5eomu.bkt.clouddn.com/Bike01E.mp3",
                 "English": "business class",
-                "English_audio": "https://translate.google.cn/translate_tts?ie=UTF-8&q=Touch&tl=en&total=1&idx=0&textlen=5&tk=846020.700715&client=t",
+                "English_audio": "http://oh7c5eomu.bkt.clouddn.com/Bike01E.mp3",
                 "Russian": "Бизнес сиденье",
-                "Russian_audio": "https://translate.google.com.hk/translate_tts?ie=UTF-8&q=%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D1%81%D0%B8%D0%B4%D0%B5%D0%BD%D1%8C%D0%B5&tl=ru&total=1&idx=0&textlen=14&tk=530214.937674&client=t&prev=input",
+                "Russian_audio": "http://oh7c5eomu.bkt.clouddn.com/Bike01E.mp3",
                 "Arabic": "مقعد الأعمال",
-                "Arabic_audio": "https://translate.google.com.hk/translate_tts?ie=UTF-8&q=%D9%85%D9%82%D8%B9%D8%AF%20%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84&tl=ar&total=1&idx=0&textlen=12&tk=393616.22652&client=t&prev=input",
+                "Arabic_audio": "http://oh7c5eomu.bkt.clouddn.com/Bike01E.mp3",
                 "German": "Geschäftssitz",
-                "German_audio": "https://translate.google.com.hk/translate_tts?ie=UTF-8&q=Gesch%C3%A4ftssitz&tl=de&total=1&idx=0&textlen=13&tk=360002.206766&client=t&prev=input",
+                "German_audio": "http://oh7c5eomu.bkt.clouddn.com/Bike01E.mp3",
                 "video_url": "hahah"
             }, {
                 "word_id": 1,
