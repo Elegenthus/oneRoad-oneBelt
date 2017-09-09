@@ -101,7 +101,7 @@ export default {
             var label = column.property + "_audio"
             audio.src = row[label]
             audio.play()
-            console.log("row", row[column.property + "_audio"])
+            // console.log("row", row[column.property + "_audio"])
         },
         deleteRow(index, rows) {
             fetch("/api/word/delete/", {
