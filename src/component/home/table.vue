@@ -127,7 +127,7 @@ export default {
 }
 
 .message_bg {
-    background-image: url("../../img/messagebox.png");
+    background-image: url("../images/messagebox.png");
     background-size: 100%;
     height: 380px;
     width: 100%;
@@ -150,7 +150,7 @@ export default {
 
 .subtittle {
     margin: 25px auto;
-    background-image: url("../../img/message.png");
+    background-image: url("../images/message.png");
     width: 95%;
     height: 25px;
     background-repeat: no-repeat;

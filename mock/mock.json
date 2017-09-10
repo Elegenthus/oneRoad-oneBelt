@@ -10,6 +10,11 @@
         "template": "manage",
         "async": false
     }, {
+        "name": "about",
+        "endpoint": "/about",
+        "template": "about",
+        "async": false
+    }, {
         "name": "learn",
         "endpoint": "/learn",
         "template": "learn",

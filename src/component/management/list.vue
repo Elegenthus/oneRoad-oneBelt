@@ -72,7 +72,7 @@ export default {
 }
 
 .icon {
-    background-image: url('../../img/logo.png');
+    background-image: url('../images/logo.png');
     width: 45px;
     height: 45px;
     background-size: 100%;

@@ -143,7 +143,7 @@ export default {
 </script>
 <style lang="sass" scoped>
 .titleBox {
-    background-image: url('../../img/titleBox.png');
+    background-image: url('../images/titleBox.png');
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -155,7 +155,7 @@ export default {
 }
 
 .keywordsTitle {
-    background-image: url('../../img/keyWordsTitle.png');
+    background-image: url('../images/keyWordsTitle.png');
     background-size: 100%;
     background-repeat: no-repeat;
     height: 25px;
@@ -164,7 +164,7 @@ export default {
 }
 
 .timeline {
-    background-image: url('../../img/keyword_bg.png');
+    background-image: url('../images/keyword_bg.png');
     background-size: 100%;
     height: 40px;
     width: 60%;
@@ -250,7 +250,7 @@ export default {
     margin-right: 10%;
     display: inline-block;
     vertical-align: bottom;
-    background-image: url('../../img/dividing_line.png');
+    background-image: url('../images/dividing_line.png');
     background-size: 100%;
     background-repeat: no-repeat;
     width: 25px;
@@ -264,15 +264,15 @@ export default {
 }
 
 .icon_panel {
-    background-image: url('../../img/icon_panel.png');
+    background-image: url('../images/icon_panel.png');
 }
 
 .icon_video {
-    background-image: url('../../img/icon_video.png');
+    background-image: url('../images/icon_video.png');
 }
 
 .icon_story {
-    background-image: url('../../img/icon_story.png');
+    background-image: url('../images/icon_story.png');
 }
 
 .cpyright {
