@@ -10,6 +10,11 @@
         "template": "manage",
         "async": false
     }, {
+        "name": "word",
+        "endpoint": "/:Int",
+        "template": "manage",
+        "async": false
+    }, {
         "name": "about",
         "endpoint": "/about",
         "template": "about",

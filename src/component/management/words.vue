@@ -4,7 +4,7 @@
             <source src = "http://oh7c5eomu.bkt.clouddn.com/Bike01E.mp3"></source>
         </audio>
         <el-table :data="tableData4" border class="tableWidth el1" @cell-click="clickEvent" >
-            <el-table-column fixed prop="Chinese" label="汉语" width="150" @cell-click="clickEvent">
+            <el-table-column fixed prop="Chinese" label="汉语" width="150">
             </el-table-column>
             <el-table-column prop="English" label="英语" width="200" class="el-table-column">
             </el-table-column>
@@ -80,7 +80,8 @@ export default {
                     "Russian_audio": this.Russian_audio,
                     "Arabic": this.Arabic,
                     "Arabic_audio": this.Arabic_audio,
-                    "video": this.video
+                    "video": this.video,
+                    "word_id": value.added
                 })
                 this.Chinese = ""
                 this.Chinese_audio = ""
@@ -105,13 +106,13 @@ export default {
         },
         deleteRow(index, rows) {
             fetch("/api/word/delete/", {
-                method: 'POST',
+                method: 'DELETE',
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    id: rows[index].word_id
+                    word_id: rows[index].word_id
                 })
             }).then((res) => {
                 return res.json()
@@ -134,7 +135,7 @@ export default {
         },
         handleCurrentChange(val) {
             var sort = window.location.pathname.split('-').pop()
-            fetch('/api/word/list?type=' + sort + '&page=' + val).then(res => {
+            fetch('/api/word/list?sort=' + sort + '&page=' + val).then(res => {
                 return res.json()
             }).then(value => {
                 this.tableData4 = value.words

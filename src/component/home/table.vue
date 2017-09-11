@@ -96,7 +96,7 @@ export default {
     vertical-align: middle;
     font-size: 0px;
     border-bottom: 1px #00bb9c solid;
-    width: 78%;
+    width: 75%;
 }
 
 .title {
@@ -127,7 +127,7 @@ export default {
 }
 
 .message_bg {
-    background-image: url("../images/messagebox.png");
+    background-image: url("../../images/messagebox.png");
     background-size: 100%;
     height: 380px;
     width: 100%;
@@ -144,13 +144,13 @@ export default {
     margin: 52px 15px;
     background-color: #eeeeee;
     width: 90%;
-    height: 200px;
+    height: 170px;
     border: 3px solid #00bb9c;
 }
 
 .subtittle {
     margin: 25px auto;
-    background-image: url("../images/message.png");
+    background-image: url("../../images/message.png");
     width: 95%;
     height: 25px;
     background-repeat: no-repeat;

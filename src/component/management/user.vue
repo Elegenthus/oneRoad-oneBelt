@@ -29,7 +29,7 @@ export default {
     methods: {
         deleteRow(index, rows) {
             fetch("/api/user/delete/", {
-                method: 'POST',
+                method: 'DELETE',
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'

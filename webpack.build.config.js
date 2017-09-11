@@ -3,6 +3,7 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -10,14 +11,16 @@ module.exports = {
         'manage.js': ['./src/manage.js'],
         'login.js': ['./src/login.js'],
         'learn.js': ['./src/learn.js'],
-        'about.js': ['./src/about.js']
+        'about.js': ['./src/about.js'],
+        // vendor: ["vue", "whatwg-fetch", "./src/scss/reset.css"]
     },
     output: {
         path: path.join(__dirname, "statics"),
-        publicPath: '/',
+        publicPath: '/static/',
         filename: '[name]'
     },
     module: {
+        noParse: /vue.runtime.min/,
         loaders: [{
                 test: /\.vue$/,
                 loader: 'vue',
@@ -54,10 +57,20 @@ module.exports = {
     devtool: '#eval-source-map',
     resolve: {
         extensions: ['', '.js', '.scss', '.vue'],
+        alias: {
+            'vue': path.resolve(__dirname, 'node_modules/vue/dist/vue.runtime.min'),
+        }
     },
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin()
+        new webpack.NoErrorsPlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+            mangle: true,
+            compress: {
+                warnings: false,
+            },
+        }),
+        // new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.[hash].js")
     ]
 };

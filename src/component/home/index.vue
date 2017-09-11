@@ -106,7 +106,7 @@
                 <a href="#" class="rlink">意见反馈</a>
             </div>
             <div class="link">
-                <img src="http://www.twword.com/uploads/wiki/93/87/50698_0.jpg" class="erwei">
+                <img :src="erwei" class="erwei">
                 <div class="rlink load">下载 APP</div>
             </div>
         </div>
@@ -117,19 +117,19 @@ import Table from './table'
 import Banner from './banner'
 
 export default {
-    // data() {
-    //         return {
-    //          banner:[]
-    //         }
+    data() {
+            return {
+                erwei:""
+            }
 
-    //     },
-    //     mounted() {
-    //         fetch('/api/carousel/').then(value => {
-    //             return value.json()
-    //         }).then(value => {
-    //             this.gaoxin = value
-    //         })
-    //     },
+        },
+        mounted() {
+            fetch('/api/qrcode/').then(value => {
+                return value.json()
+            }).then(value => {
+                this.erwei = value.img_url
+            })
+        },
     components: {
         "iTable": Table,
         "banner": Banner
@@ -141,9 +141,9 @@ export default {
     }
 }
 </script>
-<style lang="sass" scoped>
+<style lang ="sass" scoped>
 .titleBox {
-    background-image: url('../images/titleBox.png');
+    background-image: url('../../images/titleBox.png');
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -155,7 +155,7 @@ export default {
 }
 
 .keywordsTitle {
-    background-image: url('../images/keyWordsTitle.png');
+    background-image: url('../../images/keyWordsTitle.png');
     background-size: 100%;
     background-repeat: no-repeat;
     height: 25px;
@@ -164,7 +164,7 @@ export default {
 }
 
 .timeline {
-    background-image: url('../images/keyword_bg.png');
+    background-image: url('../../images/keyword_bg.png');
     background-size: 100%;
     height: 40px;
     width: 60%;
@@ -250,7 +250,7 @@ export default {
     margin-right: 10%;
     display: inline-block;
     vertical-align: bottom;
-    background-image: url('../images/dividing_line.png');
+    background-image: url('../../images/dividing_line.png');
     background-size: 100%;
     background-repeat: no-repeat;
     width: 25px;
@@ -264,15 +264,15 @@ export default {
 }
 
 .icon_panel {
-    background-image: url('../images/icon_panel.png');
+    background-image: url('../../images/icon_panel.png');
 }
 
 .icon_video {
-    background-image: url('../images/icon_video.png');
+    background-image: url('../../images/icon_video.png');
 }
 
 .icon_story {
-    background-image: url('../images/icon_story.png');
+    background-image: url('../../images/icon_story.png');
 }
 
 .cpyright {

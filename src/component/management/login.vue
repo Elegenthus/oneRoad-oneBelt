@@ -57,7 +57,7 @@ export default{
 	padding: 2%;
 }
 .icon {
-    background-image: url('../images/logo.png');
+    background-image: url('../../images/logo.png');
     width: 60px;
     height: 60px;
     background-size: 100%;

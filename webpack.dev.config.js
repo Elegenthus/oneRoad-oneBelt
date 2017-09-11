@@ -13,8 +13,8 @@ module.exports = {
         'about.js': ['./src/about.js']
     },
     output: {
-        path: path.join(__dirname, "static"),
-        publicPath: '/',
+        path: path.join(__dirname, ""),
+        publicPath: '/static/js/',
         filename: '[name]'
     },
     module: {
