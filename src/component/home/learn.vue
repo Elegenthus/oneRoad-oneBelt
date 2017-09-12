@@ -5,22 +5,22 @@
             <div class="word verticle">汉语词学习</div>
         </div>
         <el-col :span="5" class="height">
-            <el-menu default-active="/learn/1-1" class="el-menu-vertical-demo height" @open="handleOpen" @close="handleClose" router>
+            <el-menu default-active="/main/learn/1-1" class="el-menu-vertical-demo height" @open="handleOpen" @close="handleClose" router>
                 <el-submenu index="8">
                     <template slot="title"><i class="el-icon-menu"></i>词条管理</template>
                     <el-menu-item-group>
-                        <el-menu-item index="/learn/1-1">共享单车</el-menu-item>
-                        <el-menu-item index="/learn/1-2">航天工程</el-menu-item>
-                        <el-menu-item index="/learn/1-3">北斗导航</el-menu-item>
-                        <el-menu-item index="/learn/1-4">桥梁建设</el-menu-item>
-                        <el-menu-item index="/learn/1-5">孔子学院</el-menu-item>
-                        <el-menu-item index="/learn/1-6">高速铁路</el-menu-item>
-                        <el-menu-item index="/learn/1-7">机器人</el-menu-item>
-                        <el-menu-item index="/learn/1-8">无人机</el-menu-item>
-                        <el-menu-item index="/learn/1-9">网购</el-menu-item>
-                        <el-menu-item index="/learn/1-10">清洁能源</el-menu-item>
-                        <el-menu-item index="/learn/1-11">支付宝</el-menu-item>
-                        <el-menu-item index="/learn/1-12">针灸</el-menu-item>
+                        <el-menu-item index="/main/learn/1-1">共享单车</el-menu-item>
+                        <el-menu-item index="/main/learn/1-2">航天工程</el-menu-item>
+                        <el-menu-item index="/main/learn/1-3">北斗导航</el-menu-item>
+                        <el-menu-item index="/main/learn/1-4">桥梁建设</el-menu-item>
+                        <el-menu-item index="/main/learn/1-5">孔子学院</el-menu-item>
+                        <el-menu-item index="/main/learn/1-6">高速铁路</el-menu-item>
+                        <el-menu-item index="/main/learn/1-7">机器人</el-menu-item>
+                        <el-menu-item index="/main/learn/1-8">无人机</el-menu-item>
+                        <el-menu-item index="/main/learn/1-9">网购</el-menu-item>
+                        <el-menu-item index="/main/learn/1-10">清洁能源</el-menu-item>
+                        <el-menu-item index="/main/learn/1-11">支付宝</el-menu-item>
+                        <el-menu-item index="/main/learn/1-12">针灸</el-menu-item>
                     </el-menu-item-group>
                 </el-submenu>
             </el-menu>
@@ -40,7 +40,7 @@ export default {
             console.log(key, keyPath);
         },
         exit(){
-        	window.location = "/login"
+        	window.location = "/main/login"
         }
     }
 }

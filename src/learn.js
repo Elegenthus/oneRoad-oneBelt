@@ -64,24 +64,24 @@ const router = new VueRouter({
     mode: 'history',
     base: __dirname,
     routes: [
-        { path: '/learn/1-1', component: Bike },
-        { path: '/learn/1-2', component: Aerospace },
-        { path: '/learn/1-3', component: Navigation },
-        { path: '/learn/1-4', component: Bridge },
-        { path: '/learn/1-5', component: Confucius },
-        { path: '/learn/1-6', component: Railway },
-        { path: '/learn/1-7', component: Robot },
-        { path: '/learn/1-8', component: Uav },
-        { path: '/learn/1-9', component: Shopping },
-        { path: '/learn/1-10', component: Energy },
-        { path: '/learn/1-11', component: Alipay },
-        { path: '/learn/1-12', component: Acupuncture }
+        { path: '/main/learn/1-1', component: Bike },
+        { path: '/main/learn/1-2', component: Aerospace },
+        { path: '/main/learn/1-3', component: Navigation },
+        { path: '/main/learn/1-4', component: Bridge },
+        { path: '/main/learn/1-5', component: Confucius },
+        { path: '/main/learn/1-6', component: Railway },
+        { path: '/main/learn/1-7', component: Robot },
+        { path: '/main/learn/1-8', component: Uav },
+        { path: '/main/learn/1-9', component: Shopping },
+        { path: '/main/learn/1-10', component: Energy },
+        { path: '/main/learn/1-11', component: Alipay },
+        { path: '/main/learn/1-12', component: Acupuncture }
     ]
 })
 
 
 new Vue({
-  router,
-  el: '#learn',
-  render: h => h(Learn)
+    router,
+    el: '#learn',
+    render: h => h(Learn)
 })

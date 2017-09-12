@@ -7,73 +7,73 @@
             <div class="timeline">
                 <div class="_timeline">
                     <div class="_dot">
-                        <a href="/learn">
+                        <a href="/main/learn/">
                             <div class="keylink">针灸</div>
                             <div class="dot"></div>
                         </a>
                     </div>
                     <div class="_dot a">
-                        <a href="/learn">
+                        <a href="/main/learn/">
                             <div class="dot"></div>
                             <div class="keylink">北斗导航</div>
                         </a>
                     </div>
                     <div class="_dot">
-                        <a href="/learn">
+                        <a href="/main/learn/">
                             <div class="keylink">航天工程</div>
                             <div class="dot"></div>
                         </a>
                     </div>
                     <div class="_dot a">
-                        <a href="/learn">
+                        <a href="/main/learn/">
                             <div class="dot"></div>
                             <div class="keylink">孔子学院</div>
                         </a>
                     </div>
                     <div class="_dot">
-                        <a href="/learn">
+                        <a href="/main/learn/">
                             <div class="keylink">网购</div>
                             <div class="dot"></div>
                         </a>
                     </div>
                     <div class="_dot a">
-                        <a href="/learn">
+                        <a href="/main/learn/">
                             <div class="dot"></div>
                             <div class="keylink">高速铁路</div>
                         </a>
                     </div>
                     <div class="_dot">
-                        <a href="/learn">
+                        <a href="/main/learn/">
                             <div class="keylink">机器人</div>
                             <div class="dot"></div>
                         </a>
                     </div>
                     <div class="_dot a">
-                        <a href="/learn">
+                        <a href="/main/learn/">
                             <div class="dot"></div>
                             <div class="keylink">无人机</div>
                         </a>
                     </div>
                     <div class="_dot">
-                        <a href="/learn">
+                        <a href="/main/learn/">
                             <div class="keylink">清洁能源</div>
                             <div class="dot"></div>
                         </a>
                     </div>
                     <div class="_dot a">
-                        <a href="/learn">
+                        <a href="/main/learn/">
                             <div class="dot"></div>
                             <div class="keylink">支付宝</div>
                         </a>
                     </div>
                     <div class="_dot">
-                        <a href="/learn">
+                        <a href="/main/learn/">
                             <div class="keylink">共享单车</div>
                             <div class="dot"></div>
                         </a>
                     </div>
                     <div class="_dot a">
-                        <a href="/learn">
+                        <a href="/main/learn/">
                             <div class="dot"></div>
                             <div class="keylink">桥梁制造</div>
                         </a>
@@ -84,7 +84,7 @@
         <div class="iconsearchs">
             <div class="iconsearch">
                 <div class="icon icon_panel"></div>
-                <div class="icondescription"><a href="/learn">进入学习</a></div>
+                <div class="icondescription"><a href="/main/learn/">进入学习</a></div>
             </div>
             <div class="divid_line"></div>
             <div class="iconsearch">
@@ -94,7 +94,7 @@
             <div class="divid_line"></div>
             <div class="_iconsearch">
                 <div class="icon icon_story"></div>
-                <div class="icondescription"><a href="/login">后台管理</a></div>
+                <div class="icondescription"><a href="/main/login">后台管理</a></div>
             </div>
         </div>
         <iTable></iTable>

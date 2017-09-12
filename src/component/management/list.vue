@@ -6,7 +6,7 @@
             <div class="exit" v-on:click = "exit">退出系统</div>
         </div>
         <el-col :span="5" class="height">
-            <el-menu default-active="manage" class="el-menu-vertical-demo height" @open="handleOpen" @close="handleClose" router>
+            <el-menu default-active="main/manage" class="el-menu-vertical-demo height" @open="handleOpen" @close="handleClose" router>
                 <el-menu-item index="manage"><i class="el-icon-setting"></i>用户管理</el-menu-item>
                 <el-menu-item index="2"><i class="el-icon-picture"></i>图片上传</el-menu-item>
                 <el-menu-item index="3"><i class="el-icon-upload"></i>二维码修改</el-menu-item>
@@ -48,7 +48,7 @@ export default {
             console.log(key, keyPath);
         },
         exit(){
-        	window.location = "/login"
+        	window.location = "/main/login"
         }
     }
 }

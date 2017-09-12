@@ -1,27 +1,32 @@
 {
     "routes": [{
         "name": "home",
-        "endpoint": "/",
+        "endpoint": "/main",
         "template": "home",
         "async": false
     }, {
         "name": "manage",
-        "endpoint": "/manage",
+        "endpoint": "/main/manage/manage",
+        "template": "manage",
+        "async": false
+    }, {
+        "name": "words",
+        "endpoint": "/main/manage/:Int",
         "template": "manage",
         "async": false
     }, {
         "name": "about",
-        "endpoint": "/about",
+        "endpoint": "/main/about",
         "template": "about",
         "async": false
     }, {
         "name": "learn",
-        "endpoint": "/learn",
+        "endpoint": "/main/learn",
         "template": "learn",
         "async": false
     }, {
         "name": "login",
-        "endpoint": "/login",
+        "endpoint": "/main/login",
         "template": "login",
         "async": false
     }, {

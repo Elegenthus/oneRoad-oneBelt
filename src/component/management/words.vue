@@ -64,7 +64,7 @@ export default {
                     Russian_audio: this.Russian_audio,
                     Arabic: this.Arabic,
                     Arabic_audio: this.Arabic_audio,
-                    video: this.video
+                    video_url: this.video
                 })
             }).then((res) => {
                 return res.json()

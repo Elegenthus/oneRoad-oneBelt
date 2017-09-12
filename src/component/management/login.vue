@@ -38,7 +38,7 @@ export default{
             }).then(value => {
                 this.username = ""
                 this.password = ""
-                window.location = "/manage"
+                window.location = "/main/manage/manage"
             })
         },
         open() {
